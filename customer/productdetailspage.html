@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jalsoft product details page </title>
+</head>
+<link rel="stylesheet" href="./assets/css/bootstrap-icons.min.css">
+<link rel="stylesheet" href="./assets/css/bootstrap.css">
+<link rel="stylesheet" href="./assets/css/popupcss.css">
+<body>
+    <div class="none" id="confirmation-popup">
+        
+    </div>
+    <!-- Here is the navbar well styled with bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a href="index.html" class="navbar-brand">Jalsoft</a>
+            <button type="button" data-bs-toggle="collapse" data-bs-target="#navBar" class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="navbar-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="productdetailspage.html" class="nav-link active">Product details</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="sellwithus.html" class="nav-link">Blog</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="signup.html" class="nav-link">Register</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<!-----This is the beginning of the page for the display of the product details------>
+
+<div class="container mt-5">
+    <div class="row row-cols-xs-2 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-3">
+        <!-- This is the row where the product image will be show more animations should be added to make the product details page more attractive to the customers -->
+        <div class="col  shadow mt-3">
+            <div class="card border-0">
+                <img src="./assets/img/1726499247664.jpg" alt="" class="h-100">
+            </div>
+        </div>
+        <!-----This is the column with the other product details infomation such as the quantity of the products that are in stock and others as price and description------->
+        <div class="col shadow mt-3">
+            <div class="card border-0 m-3">
+                <h4 class="card-title fw-bold text-primary">
+                    Ofiice chair
+                </h5>
+                <div class="card-body">
+                    <h5 class="text-secondary">
+                        Product description
+                    </h5>
+                    <p class="text-secondary">Hey there this is the ceo of JalSoft trying to do the description of the product tha will help him to make the best out of him bro do not hesitate to look on it man it is the best ui so far man made in bootstrap</p>
+                </div>
+            <!----- THis marks the end of the product description the next is the buttons to add to cart and order the product ------->
+            <div class="mt-2 position-relative">
+                <span class="position-absolute badge bg-success start-0 top-0 m-0">In stock: 20</span>
+                <span class="position-absolute badge bg-warning end-0 top-0 m-0">10% off</span>
+            </div>
+            <div class="mt-4">
+                was:<strike class="text-danger ms-2">25670</strike>
+                Now:<span class="text-primary ms-1 fw-bold">&#10003;23500</span>
+            </div>
+            <div class="btn-group col-xl-5 col-xs-11 mt-2 col-lg-5 col-md-6 col-sm-8">
+                <button class="btn btn-primary d-flex" style="align-items:center;"><img src="./assets/svgs/shopping_bag_39dp_000000_FILL0_wght200_GRAD0_opsz40.svg" class="text-muted" alt="">Order</button>
+                <button class="btn btn-info d-flex " style="align-items:center;"><img src="./assets/svgs/shopping_cart_24dp_FILL0_wght400_GRAD0_opsz24.svg" alt="">Cart</button>
+            </div>
+            </div>
+        </div>
+
+        <div class="col shadow mt-3">
+           <div class="card border-0 m-3">
+                <h6 class="card-title text-secondary">
+                    Total purchases:<span class="text-info ms-4">456</span>
+                </h6>
+                <div class="mt-3 bg-light">
+                    <h6 class="text-muted m-1">Reactions</h6>
+                    <div class="ms-3 me-2">
+                        <h6 class="text-success  alert alert-info position-relative">Comments: <span class="ms-3">456</span><span class="position-absolute top-0 m-1 end-0 badge bg-primary">view</span></h6>
+                        <h6 class="text-success  alert alert-info">Likes: <span class="ms-3">46</span><span class="position-absolute top-0 m-1 end-0 badge bg-success">Like</span></h6>
+                        <h6 class="text-info alert alert-warning">Carts: <span class="ms-3">906</span></h6>
+                    </div>
+                </div>
+           </div>
+        </div>
+    </div>
+</div>
+
+</body>
+<script src="./assets/js/bootstrap.bundle.min.js"></script>
+<script src="./assets/js/general.js"></script>
+<script src="./assets/js/productsdetailspagehandler.js"></script>
+</html>

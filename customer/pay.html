@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JalSoft customer pay for product page</title>
+</head>
+<link rel="stylesheet" href="./assets/css/bootstrap-icons.min.css">
+<link rel="stylesheet" href="./assets/css/bootstrap.css">
+<link rel="stylesheet" href="./assets/css/popupcss.css">
+<body>
+    <div class="none" id="confirmation-popup">
+        
+    </div>
+    <!-- Here is the navbar well styled with bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a href="index.html" class="navbar-brand">Jalsoft</a>
+            <button type="button" data-bs-toggle="collapse" data-bs-target="#navBar" class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="navbar-item">
+                        <a href="login.html" class="nav-link active">Login</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="sellwithus.html" class="nav-link">Blog</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="signup.html" class="nav-link">Register</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-3">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 row-cols-xl-3">
+            <!-- The first column is for the showcasing of the product that is to be paid for -->
+            <div class="col mt-2">
+                <div class="card border-0">
+                    <img src="./assets/img/1726499520822.jpg" alt="">
+                </div>
+            </div>
+            <div class="col shadow mt-2">
+                <div class="card border-0 m-3">
+                    <h4 class="card-title text-secondary">Pay</h4>
+                    <h6 class="text-primary">Choose payment option</h6>
+                    <div class="btn-group col-md-5 col-lg-4 col-xl-3 col-sm-6 col-xs-8">
+                        <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                          <span>Payment option</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><span class="dropdown-item" onclick="populatePaymentMenu('mpesa')">M-Pesa</span></li>
+                          <li><span class="dropdown-item" onclick="populatePaymentMenu('visa')">Visa card</span></li>
+                          <li><span class="dropdown-item" onclick="populatePaymentMenu('visa')">Master card</span></li>
+                        </ul>
+                    </div>
+                    <div class="form mt-3">
+                        <form action="" class="form-group" id="payment-form">
+                            <label for="productName">Paying for</label>
+                            <div class="ms-3 input-group">
+                                <input type="text" id="productName" class="form-control text-success" value="Hp brand Laptop" disabled>
+                            </div>
+                            <div id="paymentoptcontainer">
+                                    <!-- <label for="mpesaContact">Mpesa contact</label>
+                                <div class="ms-3 input-group" id="hasError">
+                                    <input type="tel" maxlength="15" class="form-control text-muted" id="mpesaContact" required placeholder="Enter your M-Pesa number">
+                                </div>
+                                <label for="cardNumber">Card number</label>
+                                <div class="ms-3 input-group">
+                                    <input class="form-control" id="cvv" maxlength="4" required placeholder="CVV">
+                                    <input type="number" class="form-control text-muted" maxlength="18" id="cardNumber" required placeholder="Enter card number here">
+                                </div> -->
+                            </div>
+                            <label for="amountToPay">Payment amount</label>
+                            <div class="ms-3 input-group">
+                                <input type="text" class="form-control text-success" id="amountToPay" value="24000" disabled>
+                            </div>
+                            <button type="submit" class="btn w-100 btn-success mt-4">Pay</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+</body>
+<script src="./assets/js/bootstrap.bundle.min.js"></script>
+<script src="./assets/js/general.js"></script>
+<script src="./assets/js/paymentpagehandler.js"></script>
+</html>

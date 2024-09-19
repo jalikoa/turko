@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jalsoft eccormerce website signup</title>
+</head>
+<link rel="stylesheet" href="./assets/css/bootstrap.css">
+<link rel="stylesheet" href="./assets/css/popupcss.css">
+<body>
+    <div class="none" id="confirmation-popup">
+        
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a href="index.html" class="navbar-brand">Jalsoft</a>
+            <button type="button" data-bs-toggle="collapse" data-bs-target="#navBar" class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="navbar-item">
+                        <a href="login.html" class="nav-link">Login</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="sellwithus.html" class="nav-link">Blog</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="signup.html" class="nav-link active">Register</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End of the navigation bar -->
+     <!-- start of body content -->
+     <div class="container mt-4">
+        <div class="row row-cols-xs-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-3">
+            <div class="col m-3">
+                <!---Here  is where the login form goes ---->
+                <form id="signup-form" action="" method="post" class="card h-100">
+                    <div class="card-body">
+                        <h3 class="card-title">Signup</h3>
+                        <label for="name">Phone</label>
+                        <br>
+                        <div class="input-group">
+                            <br>
+                            <input type="text" id="name" class="form-control" placeholder="Your name" required>
+                        </div>
+                        <label for="phone">Phone</label>
+                        <br>
+                        <div class="input-group">
+                            <br>
+                            <input type="tel" id="phone" class="form-control" placeholder="Phone no" required>
+                        </div>
+                        <label for="email">Email</label>
+                        <br>
+                        <div class="input-group">
+                            <br>
+                            <input type="email" id="email" class="form-control" placeholder=" Email" required>
+                        </div>
+                        <label for="location">Location</label>
+                        <br>
+                        <div class="input-group">
+                            <br>
+                            <input type="text" id="location" class="form-control" placeholder="Area pin code e.g 40223" required>
+                        </div>
+                      <label for="password">Password</label>
+                        <br>
+                        <div class="input-group">
+                            <br>
+                            <input type="password" id="password" class="form-control" placeholder="Password" required>
+                        </div>
+                        <label for="confirmPassword">Confirm password</label>
+                        <br>
+                        <div class="input-group">
+                            <br>
+                            <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm your password" required>
+                        </div>
+                    <button class="btn btn-primary m-2">Register</button>
+                    <div class="m-3">
+                        <br>
+                        Or  have an account <a href="login.html" class="btn btn-link">Login</a>
+                    </div>
+                </form>
+               
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./assets/js/bootstrap.bundle.min.js"></script>
+<script src="./assets/js/general.js"></script>
+<script src="./assets/js/signuphandler.js"></script>
+</html>

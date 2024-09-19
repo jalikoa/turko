@@ -1,0 +1,8 @@
+#### stop using the absolute positioning for the product pricses as this does not work efficiently for the products that in row with products that
+have smaller height
+
+## for the home page the user should not forge the id and be able to login check the db for this 
+## to prevent someone from logging in in a different phone use some thing maybe cookies or localstorage to prevent this
+##on file uploadin change the file name to make them unexecutable coz some names can be executed
+## never execute any raw data from the client side 
+## Add icons at the end to improve the visual appealing

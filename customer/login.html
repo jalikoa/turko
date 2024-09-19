@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jalsoft eccormerce login page</title>
+</head>
+<link rel="stylesheet" href="./assets/css/bootstrap.css">
+<link rel="stylesheet" href="./assets/css/popupcss.css">
+<body>
+    
+    <div class="none" id="confirmation-popup">
+        
+    </div>
+    <!-- Here is the navbar well styled with bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a href="index.html" class="navbar-brand">Jalsoft</a>
+            <button type="button" data-bs-toggle="collapse" data-bs-target="#navBar" class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="navbar-item">
+                        <a href="login.html" class="nav-link active">Login</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="sellwithus.html" class="nav-link">Blog</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="signup.html" class="nav-link">Register</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End of the nav bar here -->
+    <!-- start of body content -->
+    <div class="container mt-4">
+        <div class="row row-cols-2 row-cols-md-2">
+            <div class="col">
+                <!---Here  is where the login form goes ---->
+                <form id="login-form" action="" method="post" class="card h-100">
+                    <div class="card-body">
+                        <h3 class="card-title">Login</h3>
+                        <label for="phoneOrEmail">Phone or email</label>
+                        <br>
+                        <div class="input-group">
+                            <br>
+                            <input type="text" id="phoneOrEmail" class="form-control" placeholder="Phone no or Email" required>
+                        </div>
+                      <label for="password">Password</label>
+                        <br>
+                        <div class="input-group">
+                            <br>
+                            <input type="password" id="password" class="form-control" placeholder="Password" required>
+                        </div>
+                        <label for="remeberMeCheck">Remeber me</label>
+                        <div class="chec-box">
+                            <input type="checkbox" name="remember" id="remeberMeCheck" value="remember">
+                        </div>
+                    </div>
+                    <button class="btn btn-primary m-2">Log in</button>
+                    <div class="m-3">
+                        <a href="forgotpassword.html" class="btn btn-link">Forgotten password</a>
+                        <br>
+                        Or don't have an account <a href="signup.html" class="btn btn-link">Register</a>
+                    </div>
+                </form>
+               
+            </div>
+            <div class="col shadow">
+                <!--This is a column that is to be used to showcase on pc even as the user login-->
+                <div class="row row-cols-xl-2 my-3  row-cols-2">
+                    <div class="col">
+                        <div class="card m-0">
+                            <img src="./assets/img/1726499553131.jpg" class="card-img-top img-thumbnail" alt="">
+                            <div class="card-body position-relative">
+                                <span class="position-absolute m-1 start-0 left-0 badge bg-success">In stock: 20</span>
+                                <span class="position-absolute m-1 end-0 right-0 badge bg-warning">10 % off</span>
+                                <h5 class="mt-5">laptop</h5>
+                                <div class="btn-group">
+                                    <button class="btn btn-primary">Buy</button><button class="btn btn-warning">Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div><div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title text-muted">Office chair</h5>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./assets/js/bootstrap.bundle.min.js"></script>
+<script src="./assets/js/general.js"></script>
+<script src="./assets/js/loginhandler.js"></script>
+</html>
