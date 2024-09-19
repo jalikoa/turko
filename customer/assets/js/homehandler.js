@@ -94,3 +94,7 @@ searchForm.addEventListener('submit',(e)=>{
     }
     searchXhr.send(data);
 });
+ // Initialize tooltips
+ document.querySelectorAll('[data-bs-toggle="tooltip"]').forEach(function (element) {
+    new bootstrap.Tooltip(element);
+  });

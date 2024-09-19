@@ -58,3 +58,11 @@ signUpForm.addEventListener('submit',(e)=>{
     }
     
 });
+const profilePicture = document.getElementById('profilePic');
+const profilePicPreview = document.getElementById('profilePicPreview');
+profilePicture.onchange = ()=>{
+    profilePicPreview.src = File.createObjectUrl(profilePicture.files[0]);
+}
+function uploadProfilePicture(){
+    profilePicture.click();
+}

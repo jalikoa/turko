@@ -35,15 +35,45 @@
             </div>
         </div>
     </nav>
-    <button type="button" class="btn btn-primary">Action</button>
-    <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-      <span class="visually-hidden">Toggle Dropdown</span>
-    </button>
-    <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="#">Action 1</a></li>
-      <li><a class="dropdown-item" href="#">Action 2</a></li>
-      <li><a class="dropdown-item" href="#">Action 3</a></li>
-    </ul>
+   <div class="container mt-3">
+    <div class="row row-cols-md-2 row-cols-sm-2 row-cols-xl-3">
+        <h3 class="text-secondary">Edit your profile</h3>
+        
+        <div class="col">
+            <form action="#" role="form" class="form-group mb-5">
+                <p class="alert alert-warning"><sub class="text-danger">Please do not Delete your profile when you ordered an.Item this may interfere with the delivery process</sub></p>
+                <div class="card border-0 position-relative">
+                    <img src="./assets/img/FB_IMG_17259680677679054.jpg" alt="" class="card-img-top img-fluid img-thumbnail">
+                    <button type="button" class="position-absolute bottom-0 end-0 mb-5 btn btn-success">&nbsp;&nbsp;Edit</button>
+                    <button type="button" class="position-absolute bottom-0 end-0 m-0 btn btn-danger">Delete</button>
+                </div>
+                <label for="userName">Name:</label>
+                <div class="input-group">
+                    <input type="text" class="form-control m-2" id="userName" placeholder="Your Name" value="Calvince Owino Jalikoa" required>
+                </div>
+                <label for="userEmail">Email:</label>
+                <div class="input-group">
+                    <input type="email" class="form-control m-2" id="userEmail" placeholder="Your Email" value="t313jalikoa@gmail.com" required>
+                </div>
+                <label for="userPhone">Phone:</label>
+                <div class="input-group">
+                    <input type="tel" class="form-control m-2" id="userPhone" placeholder="Your Contact here" value="0714192260">
+                </div>
+                <label for="userLocation">Location:</label>
+                <div class="input-group">
+                    <input type="text" class="form-control m-2" id="userLocation" placeholder="Area pin code eg. 40223" value="40223-Kadongo">
+                </div>
+                <label for="userPassword">Password to save changes:</label>
+                <div class="input-group">
+                    <input type="password" class="form-control m-2" id="userPassword" placeholder="Your password" required>
+                </div>
+                
+                <button type="submit" class="btn btn-primary w-100">Update</button>
+                <button type="button" class="mt-2 w-100 btn btn-danger">Delete profile</button>
+            </form>
+        </div>
+    </div>
+   </div>
 </body>
 <script src="./assets/js/bootstrap.bundle.min.js"></script>
 <script src="./assets/js/general.js"></script>
